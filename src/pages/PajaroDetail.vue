@@ -4,7 +4,8 @@
     <ul>
       <li v-for="bird in birds" :key="bird.id">
         <p>Name:{{ bird.name.spanish }}</p>
-        <p>Foto: {{ bird.images.main }}</p>
+        
+        <p><img :src="bird.images.main" /></p>
       </li>
     </ul>
   </div>
